@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "tmrx's crazifier",
+  "version": "1.0.0",
+  "description": "get a break from your boring corporate job with this chaos thing",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": [
+    "https://www.myinstants.com/*",
+    "https://upload.wikimedia.org/*",
+    "https://i.pinimg.com/*",
+    "https://cdn-useast1.kapwing.com/*",
+    "https://www.meowbox.com/*",
+    "https://i.redd.it/*",
+    "https://media.tenor.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": "tmrx",
+  "short_name": "tmrx-crazifier",
+  "offline_enabled": true,
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["cats/*.gif", "sounds/*.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "minimum_edge_version": "79.0.0.0",
+  "browser_specific_settings": {
+    "edge": {
+      "browser_action_next_to_address_bar": true
+    }
+  }
+}
